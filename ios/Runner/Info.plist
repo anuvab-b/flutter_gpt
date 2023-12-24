@@ -47,5 +47,10 @@
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
+	<key>NSSpeechRecognitionUsageDescription</key>
+    <string>Flutter GPT required permission to recognise speech for voice search</string>
+    <key>NSMicrophoneUsageDescription</key>
+    <string>Flutter GPT required permission to access microphone for voice search</string>
+
 </dict>
 </plist>
