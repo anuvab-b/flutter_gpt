@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gpt/common/colors.dart';
 import 'package:flutter_gpt/home_page.dart';
 
 void main() {
@@ -11,13 +12,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
-
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const HomePage()
-    );
+        debugShowCheckedModeBanner: false,
+        title: "Flutter GPT",
+        theme: ThemeData.light(useMaterial3: true).copyWith(
+            scaffoldBackgroundColor: AppColours.whiteColor,
+            appBarTheme: const AppBarTheme(backgroundColor: AppColours.whiteColor)),
+        home: const HomePage());
   }
 }
